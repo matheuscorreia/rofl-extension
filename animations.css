@@ -1,0 +1,38 @@
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes runLeftToRight {
+  0% {
+    left: -10%;
+  }
+
+  100% {
+    left: 100%;
+  }
+}
+
+.large-emoji-container.emoji-xlarge > img[alt="♿"] {
+  position: fixed;
+  animation: runLeftToRight 3s cubic-bezier(0.38, -0.12, 0.63, 1.43) infinite;
+}
+
+.large-emoji-container.emoji-xlarge > img[alt="🤣"] {
+  position: fixed;
+  animation: spin 1s linear infinite;
+}
+
+.large-emoji-container.emoji-xlarge > img[alt="😂"] {
+  position: fixed;
+  animation: spin 1s linear infinite;
+}
